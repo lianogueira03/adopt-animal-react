@@ -1,0 +1,158 @@
+/*NAVEGADOR*/
+
+.bg-nav{
+    background: #ff8066;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link{
+    color: #f9f9f9;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #f9f9f9;
+    background: #de6b6b;
+    border-radius: 5px;
+}
+
+.bg-nav .navbar-nav .nav-link{
+    color: #f9f9f9;
+}
+
+
+.bg-nav .navbar-nav .nav-link:hover{
+    padding: 6px;
+    color: #f9f9f9;
+    background: #de6b6b;
+    border-radius: 4px;
+}
+
+.btn-outline-success{
+    background:#ff8066;
+    border: 1px #f9f9f9;
+    color: #f9f9f9
+}
+
+
+.btn-outline-success.focus, .btn-outline-success:focus{
+    background:#ff8066;
+    border: 1px #f9f9f9;
+    color: #f9f9f9
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:focus,
+.btn-primary.btn-adopt:active,
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #de6b6b;
+    border-color: #de6b6b;
+    color: #f9f9f9;
+}
+
+
+/*FORMULARIO*/
+
+.container{
+    width: 500px;
+    padding: 2%;
+    width: auto;
+    margin-top: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.container h3{ 
+    color: #ff8066;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.btn-primary{
+    background: #ff8066;
+    border: 1px solid #ff8066;
+}
+
+.btn-primary:hover{
+    background: #ff6242;
+    border: 1px solid #ff6242;
+}
+
+
+/*LIST*/
+
+.btn-primary.btn-adopt{
+background-color: #ff8066;
+border: #ff8066;
+}
+
+.btn-primary.btn-adopt:hover{
+    background-color: #ff6242;
+    border: #ff8066;
+}
+
+.btn-primary.btn-adopt:focus{
+    background-color: #ff6242;
+    border: #ff8066;
+}
+
+.row{
+    margin-top: 20px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+    margin-bottom: 15px;
+}
+
+h5{ 
+    color: #ff8066;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 26px;
+}
+
+
+.titulo-list{
+    color: #ff8066;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 2%;
+    width: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*ANIMAL*/
+
+.container-animal{
+    width: 500px;
+    padding: 2%;
+    width: auto;
+    margin-top: 10px;
+}
+
+
+.card-text b{
+    color:  #ff8066;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+    height: 50px;
+    margin-top: 30px;
+    background: #ff8066;
+    padding: 10px;
+    color: #f9f9f9;
+    bottom: 0px;
+}
+
+.copyright{
+    text-align: center;
+    height: 80%;
+}
