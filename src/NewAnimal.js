@@ -8,6 +8,8 @@ class NewAnimal extends React.Component {
     this.animalSex = React.createRef();
     this.animalAge = React.createRef();
     this.animalImage = React.createRef();
+    this.localidad = React.createRef();
+    this.animalEspecie = React.createRef();
   }
 
   handleSubmit = event => {
@@ -20,7 +22,10 @@ class NewAnimal extends React.Component {
       imagen: this.animalImage.current.value,
       nombre: this.animalName.current.value,
       sexo: this.animalSex.current.value,
-      edad: this.animalAge.current.value
+      edad: this.animalAge.current.value,
+      localidad: this.localidad.current.value,
+      especie: this.animalEspecie.current.value,
+
     };
 
 
@@ -31,6 +36,8 @@ class NewAnimal extends React.Component {
     this.animalName.current.value = "";
     this.animalSex.current.value = "";
     this.animalAge.current.value = "";
+    this.localidad.current.value = "";
+    this.animalEspecie.current.value = "";
 
     this.props.goToAnimalList();
   };
@@ -87,6 +94,17 @@ class NewAnimal extends React.Component {
             </div>
 
             <div className="form-group">
+              <label htmlFor="Especie">Especie</label>
+              <input
+                type="text"
+                className="form-control"
+                id="Especie"
+                placeholder="Perro o Gato"
+                ref={this.animalEspecie}
+              />
+            </div>
+
+            <div className="form-group">
               <label htmlFor="Edad">Edad</label>
               <input
                 type="text"
@@ -103,7 +121,7 @@ class NewAnimal extends React.Component {
                 type="text"
                 className="form-control"
                 id="Localidad"
-                placeholder="Barrio"
+                placeholder="Departamento"
                 ref={this.localidad}
               />
             </div>

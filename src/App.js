@@ -18,6 +18,7 @@ class App extends React.Component {
           imagen: "assets/tango.JPG",
           nombre: "Tango",
           sexo: "Macho",
+          especie: "Perro",
           edad: "7 años",
           nacimiento: "25/03/2012",
           localidad: "Canelones",
@@ -35,6 +36,7 @@ class App extends React.Component {
           imagen: "assets/manchita.JPG",
           nombre: "Manchita",
           sexo: "Hembra",
+          especie: "Perro",
           edad: "2 años",
           nacimiento: "17/11/2016",
           localidad: "Montevideo",
@@ -51,6 +53,7 @@ class App extends React.Component {
           imagen: "assets/thor.jpg",
           nombre: "Thor",
           sexo: "Macho",
+          especie: "Perro",
           edad: "11 años",
           nacimiento: "25/06/2008",
           localidad: "Canelones",
@@ -68,6 +71,7 @@ class App extends React.Component {
           imagen: "assets/raul.jpg",
           nombre: "Raúl",
           sexo: "Macho",
+          especie: "Gato",
           edad: "9 meses",
           nacimiento: "25/09/2018",
           localidad: "Maldonado",
@@ -84,6 +88,7 @@ class App extends React.Component {
           imagen: "assets/garfield.jpg",
           nombre: "Garfield",
           sexo: "Macho",
+          especie: "Gato",
           edad: "2 años",
           nacimiento: "25/02/2016",
           localidad: "Montevideo",
@@ -100,6 +105,7 @@ class App extends React.Component {
           imagen: "assets/suertudo.JPG",
           nombre: "Suertudo",
           sexo: "Macho",
+          especie: "Perro",
           edad: "9 años",
           nacimiento: "25/05/2010",
           localidad: "Lavalleja",
@@ -116,6 +122,7 @@ class App extends React.Component {
           imagen: "assets/Sarah.jpg",
           nombre: "Sarah",
           sexo: "Hembra",
+          especie: "Gato",
           edad: "3 años",
           nacimiento: "25/05/2016",
           localidad: "Canelones",
@@ -132,6 +139,7 @@ class App extends React.Component {
           imagen: "assets/perroBlanco_Juan.jpg",
           nombre: "Juan",
           sexo: "Macho",
+          especie: "Perro",
           edad: "5 años",
           nacimiento: "13/02/2015",
           localidad: "Artigas",
@@ -148,6 +156,7 @@ class App extends React.Component {
           imagen: "assets/negra.JPG",
           nombre: "Negra",
           sexo: "Hembra",
+          especie: "Perro",
           edad: "6 años",
           nacimiento: "29/04/2013",
           localidad: "Canelones",
@@ -165,6 +174,7 @@ class App extends React.Component {
           imagen: "assets/gatitos.JPG",
           nombre: "Gatitos",
           sexo: "Hembra",
+          especie: "Gato",
           edad: "5 meses",
           nacimiento: "25/01/2019",
           localidad: "Canelones",
@@ -181,6 +191,7 @@ class App extends React.Component {
           imagen: "assets/orejas.jpg",
           nombre: "Orejas",
           sexo: "Macho",
+          especie: "Perro",
           edad: "5 meses",
           nacimiento: "20/01/2019",
           localidad: "San José",
@@ -198,6 +209,7 @@ class App extends React.Component {
           imagen: "assets/pepe.jpg",
           nombre: "Pepe",
           sexo: "Macho",
+          especie: "Perro",
           edad: "3 meses",
           nacimiento: "25/03/2019",
           localidad: "Maldonado",
@@ -222,21 +234,20 @@ class App extends React.Component {
     });
   };
 
-  // goToAnimalList cambia a la seccion de la  lista de animales
+  
   goToAnimalList = () => {
     this.setState({
       section: 1
     });
   };
 
-  // goToNewAnimal cambia a la seccion que crea el nuevo animal
   goToNewAnimal = () => {
     this.setState({
       section: 3
     });
   };
 
-  // Esta funcion recibe el animal que le envie desde el formulario
+ 
   addNewAnimal = animal => {
     this.setState({
       AnimalsList: this.state.AnimalsList.concat(animal)

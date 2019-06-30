@@ -8,7 +8,7 @@ class AnimalItem extends React.Component {
           <img
             src={this.props.animal.imagen}
             className="card-img-top"
-            alt="Perro  Labrador"
+            alt="Animal"
           /> 
           <div className="card-body">
             <h5 className="card-title">{this.props.animal.nombre}</h5>
