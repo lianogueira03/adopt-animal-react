@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import "./styles.css";
 import Header from "./Header";
 import AnimalList from "./AnimalList";
@@ -165,7 +164,7 @@ class App extends React.Component {
           id: 10,
           imagen: "assets/gatitos.JPG",
           nombre: "Gatitos",
-          sexo: "Hembras",
+          sexo: "Hembra",
           edad: "5 meses",
           nacimiento: "25/01/2019",
           localidad: "Canelones",
